@@ -44,7 +44,7 @@ body {
 
 h1{
     font-family: 'Nunito', sans-serif;
-    font-size: 3.5vw;
+    font-size: 3.2vw;
     color:#7a2259;
     margin: 0;
     text-align: center;
@@ -143,9 +143,9 @@ img {
     font-size: 4.5vw;
     }
     h1{
-        font-size: 6vw;
+        font-size: 5.5vw;
     }
     #gamedescription h1{
-        font-size: 5.5vw;
+        font-size: 5vw;
     }
 }
