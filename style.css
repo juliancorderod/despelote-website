@@ -1,5 +1,4 @@
-/* Fonts from Google Fonts - more at https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 
 body {
     background-image: url('parallax/fondo%20noise.png');
@@ -11,7 +10,7 @@ body {
     border: 0;
     z-index: 0;
     
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
 
 
@@ -35,7 +34,7 @@ body {
 	z-index: 99;
 	position: relative;
     
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Comfortaa', cursive;
     font-size: 2vw;
     color:#7a2259;
     
@@ -43,7 +42,7 @@ body {
 
 
 h1{
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Comfortaa', cursive;
     font-size: 3.2vw;
     color:#7a2259;
     margin: 0;
@@ -58,12 +57,31 @@ h1{
     font-weight: bold;
 }
 
+.flex-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.flex-item-characters {
+  max-width: 18%;
+}
+
+.flex-item-snapshots {
+  max-width: 32%;
+}
+
 /*mailchimp stuff*/
 #mc_embed_signup{
     background:clear; 
     color:#7a2259;
     clear:left; 
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Comfortaa', cursive;
     width:100%;
     
 }
@@ -147,5 +165,11 @@ img {
     }
     #gamedescription h1{
         font-size: 5vw;
+    }
+    .flex-item-characters {
+        max-width: 20%;
+    }
+    .flex-item-snapshots {
+        max-width: 95%;
     }
 }
