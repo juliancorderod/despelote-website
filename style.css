@@ -49,12 +49,22 @@ h1{
     text-align: center;
 }
 
+a{
+    color:#7a2259;
+    font-weight: bold;
+}
+
 #gamedescription{
     text-align: justify;
 }
 #gamedescription h1{
     font-size: 3vw;
     font-weight: bold;
+}
+
+#extranotes{
+    font-size: 1.8vw;
+    text-align: center;
 }
 
 .flex-container {
@@ -171,5 +181,8 @@ img {
     }
     .flex-item-snapshots {
         max-width: 95%;
+    }
+    #extranotes{
+        font-size: 4.5vw;
     }
 }
