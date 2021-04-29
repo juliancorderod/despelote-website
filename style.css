@@ -11,8 +11,8 @@
 
 body {
     background-image: url('parallax/fondo%20noise.png');
-    background-size: 100% auto;
-    background-repeat: repeat-y;
+    background-size: auto;
+    background-repeat: repeat;
 
     margin: 0;
     padding: 0;
@@ -26,8 +26,8 @@ body {
 
 #mainstuff {
     background-image: url('parallax/fondo%20noise.png');
-    background-size: 100% auto;
-    background-repeat: repeat-y;
+    background-size: auto;
+    background-repeat: repeat;
     
 	position: relative;
 	z-index: 98;
