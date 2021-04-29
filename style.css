@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 
+@font-face {
+    font-family: 'despelote_regular';
+    src: url('fonts/Despelote-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'despelote_Thic';
+    src: url('fonts/DespeloteThic-Regular.ttf') format('truetype');
+}
+
 body {
     background-image: url('parallax/fondo%20noise.png');
     background-size: 100% auto;
@@ -11,6 +20,7 @@ body {
     z-index: 0;
     
     font-family: 'Comfortaa', cursive;
+    /* font-family: 'despelote_regular'; */
 }
 
 
@@ -35,22 +45,28 @@ body {
 	position: relative;
     
     font-family: 'Comfortaa', cursive;
-    font-size: 35px;
+    /* font-family: 'despelote_regular'; */
+    font-size: 30px;
     color:#7a2259;
-    
+    /* color: white; */
+    /* -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: black; */
 }
 
 
 h1{
     font-family: 'Comfortaa', cursive;
-    font-size: 50px;
+    /* font-family: 'despelote_regular'; */
+    font-size: 45px;
     color:#7a2259;
+    /* color: white; */
     margin: 0;
     text-align: center;
 }
 
 a{
     color:#7a2259;
+    /* color: white; */
     font-weight: bold;
 }
 
@@ -63,7 +79,7 @@ a{
 }
 
 #extranotes{
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -84,6 +100,7 @@ a{
 
 .flex-item-snapshots {
   max-width: 32%;
+  /* -webkit-flex-flow: column wrap; */
 }
 
 /*mailchimp stuff*/
@@ -119,7 +136,7 @@ a{
 img { 
     position: relative;
     width: 100%; 
-    margin:0;
+    margin: 0px;
     background-position: bottom center;
 }
 
