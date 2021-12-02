@@ -20,6 +20,7 @@ body {
     z-index: 0;
     
     font-family: 'Comfortaa', cursive;
+    color:#7a2259;
     /* font-family: 'despelote_regular'; */
 }
 
@@ -99,7 +100,7 @@ a{
 }
 
 .flex-item-snapshots {
-  max-width: 32%;
+  max-width: 95%;
   /* -webkit-flex-flow: column wrap; */
 }
 
@@ -138,7 +139,48 @@ img {
     width: 100%; 
     margin: 0px;
     background-position: bottom center;
+    /* vertical-align: middle; */
 }
+
+/* slideshow */
+/* Position the image container (needed to position the left and right arrows) */
+.slidesContainer {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prevSlide,
+  .nextSlide {
+    font-family: Arial;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width:15%;
+    height:100%;
+    color: transparent;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+    -webkit-user-select: none;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+  }
+  
+  /* Position the "next button" to the right */
+  .nextSlide {
+    right: 0;
+    /* background-color: rgba(255, 0, 0, 0.8); */
+    text-align: right;
+  }
+  
+  /* .prevSlide:hover,
+  .nextSlide:hover {
+      color: white;
+  } */
 
 /* parallax stuff*/ 
 /*ITS WORKING DONT TOUCH!**/
@@ -203,3 +245,5 @@ img {
         font-size: 4.5vw;
     }
 }
+
+

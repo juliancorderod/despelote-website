@@ -74,60 +74,110 @@
                     <div class="flex-item-characters"><img src="gifs-screenshots/teen-no-finger.gif"></div>
                 </div>
                 <br>
-                Set against the backdrop of Ecuador's first qualifying run for the World Cup in 2002,
-                <b><i>despelote</i></b> is a semi-autobiographical game about my experiences as a child in Quito's
-                central park.
-                <!-- <b><i>despelote</i></b> is a first-person exploration game about the universal language of soccer and
-                the ways it can bring people together, or push them apart. -->
-                <!-- <br>
-                Run, pass, and play with dozens of charming, hand-drawn characters in a unique world inspired by the
-                street parks of Quito, Ecuador. -->
+                <b><i>despelote</i></b> is a soccer game where the rules aren’t enforced by the game, but socially by
+                the people around you.
                 <br>
                 <br>
-                <div class="flex-container">
-                    <div class="flex-item-snapshots"><img src="gifs-screenshots/snapshot1.jpg"></div>
-                    <div class="flex-item-snapshots"><img src="gifs-screenshots/snapshot2.jpg"></div>
-                    <div class="flex-item-snapshots"><img src="gifs-screenshots/snapshot3.jpg"></div>
-                </div>
-                <!-- <br>
-                The game consists of three “days,” with each one taking place at a different phase in the player’s life.
-                As you get older, so do the characters in the world around you. Your interactions with them, as well as
-                your relationship to soccer itself, change dramatically with time. -->
-
+                Run, pass, and play with dozens of charming, hand-drawn characters as you learn the language of soccer
+                and explore the streets and parks of Quito, set against the backdrop of Ecuador's first qualifying run
+                for the World Cup in 2002.
+                <br>
+                <br>
             </div>
 
-            <br>
-            <h1>coming soon</h1>
-            <br>
+            <!-- slideshow stuff -->
+            <div class="slidesContainer">
+                <!-- all content is dynamically loaded in here!-->
+            </div>
+            <script>
 
-            <div id="extranotes">
+                document.body.onload = loadAllPics();
+                function loadAllPics() {
+                    var slideContainer = document.getElementsByClassName("slidesContainer");
+                    var picsToLoad = 17;
+                    for (i = 0; i < picsToLoad; i++) {
+                        var newSlideDiv = document.createElement("div");
+                        newSlideDiv.setAttribute("class", "mySlides");
+                        var newSlideImg = document.createElement("img");
+                        newSlideImg.setAttribute("src", "gifs-screenshots/slideshow-pics/" + i + ".png");
+                        newSlideImg.setAttribute("style", "width:100%");
+
+                        newSlideDiv.appendChild(newSlideImg);
+                        slideContainer[0].appendChild(newSlideDiv);
+                    }
+
+                    var prevButt = document.createElement("a");
+                    prevButt.setAttribute("class", "prevSlide");
+                    prevButt.setAttribute("onclick", "plusSlides(-1)");
+                    prevButt.innerHTML = "<";
+                    slideContainer[0].appendChild(prevButt);
+
+                    var nextButt = document.createElement("a");
+                    nextButt.setAttribute("class", "nextSlide");
+                    nextButt.setAttribute("onclick", "plusSlides(1)");
+                    nextButt.innerHTML = ">";
+                    slideContainer[0].appendChild(nextButt);
+                }
+
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+
+                }
+            </script>
+            <!-- <div class="flex-container">
+                <div class="flex-item-snapshots"><img src="gifs-screenshots/snapshot1.jpg"></div>
+                <div class="flex-item-snapshots"><img src="gifs-screenshots/snapshot2.jpg"></div>
+                <div class="flex-item-snapshots"><img src="gifs-screenshots/snapshot3.jpg"></div>
+            </div> -->
+
+        </div>
+
+        <br>
+        <h1>coming soon</h1>
+        <br>
+
+        <div id="extranotes">
+            <!--
                 featured in the <a href="https://www.nytimes.com/interactive/2019/10/16/technology/game-developers.html"
                     target="_blank">nytimes</a>
                 <br>
                 <br>
-                made by <a href="https://solimporta.com" target="_blank">julián cordero</a> and <a
-                    href="https://sebastianvalbuena.wordpress.com/" target="_blank">sebastián valbuena</a>
+                -->
+            made by <a href="https://solimporta.com" target="_blank">julián cordero</a> and <a
+                href="https://sebastianvalbuena.wordpress.com/" target="_blank">sebastián valbuena</a>
 
-                <br>
-                <br>
-                produced by <a href="https://apeout.com/" target="_blank">gabe cuzzillo</a>
-                <br>
-                with sound design by <a href="https://www.ianjb.com/" target="_blank">ian berman</a>
-                <br>
-                <br>
-                <a href="https://twitter.com/despelotegame" target="_blank"><i class="fa fa-twitter"
-                        style="font-size:40px"></i></a>
-                <!-- <i style="font-size:40px" class="fa"><a href="https://twitter.com/despelotegame"
+            <br>
+            <br>
+            produced by <a href="https://apeout.com/" target="_blank">gabe cuzzillo</a>
+            <br>
+            with sound design by <a href="https://www.ianjb.com/" target="_blank">ian berman</a>
+            <br>
+            <br>
+            <a href="https://twitter.com/despelotegame" target="_blank"><i class="fa fa-twitter"
+                    style="font-size:40px"></i></a>
+            <!-- <i style="font-size:40px" class="fa"><a href="https://twitter.com/despelotegame"
                         target="_blank">&#xf099;</a></i> -->
-            </div>
-
-
-            <!--figure out how to put screenshots pleaseee-->
-
-
         </div>
     </div>
-
+    </div>
 
     <!-- nino pelota footer -->
     <img src="parallax/nino-pelota.png">
