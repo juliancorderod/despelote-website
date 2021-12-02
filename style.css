@@ -156,31 +156,34 @@ img {
   /* Next & previous buttons */
   .prevSlide,
   .nextSlide {
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
-    position: absolute;
-    top: 0;
-    width:15%;
-    height:100%;
-    color: transparent;
+    position:absolute;
+    top:50%;
+    padding:3%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(-0%,-50%);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 150%;
     user-select: none;
     -webkit-user-select: none;
-    /* background-color: rgba(0, 0, 0, 0.8); */
+    color: #7a2259;
+    -webkit-text-stroke: 2px #fecea4;
+        /* background-color: rgba(254,206,164,1); */
   }
   
   /* Position the "next button" to the right */
   .nextSlide {
-    right: 0;
-    /* background-color: rgba(255, 0, 0, 0.8); */
+    right: 0%;
     text-align: right;
+    /* background-color: rgba(255, 0, 0, 0.8); */
   }
   
-  /* .prevSlide:hover,
+  .prevSlide:hover,
   .nextSlide:hover {
-      color: white;
-  } */
+    color: #fecea4;
+    -webkit-text-stroke-color:#7a2259;
+  }
 
 /* parallax stuff*/ 
 /*ITS WORKING DONT TOUCH!**/
