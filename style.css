@@ -27,7 +27,7 @@ body {
 
 #mainstuff {
     background-image: url('parallax/fondo%20noise.png');
-    background-size: auto;
+    background-size: 100%;
     background-repeat: repeat;
     
 	position: relative;
